@@ -1,3 +1,5 @@
+'use strict';
+
 var express = require('express'),
     logger = require('morgan'),
     bodyParser = require('body-parser'),
