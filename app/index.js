@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-mongoose.connect(process.env.MONGOHQ_URL || 'sppvm', 'arkad');
+mongoose.connect(process.env.MONGOHQ_URL || 'mongodb://sppvm/arkad');
 var answer = mongoose.model('Answer', answerSchema);
 
 app.get('/', function(req, res) {
