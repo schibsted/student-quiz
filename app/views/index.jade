@@ -11,35 +11,35 @@ html(lang="en")
                     By just answering these questions three,
                     you are competing for a date with Tad himself!
 
-                form
+                form(method='post')
                     .question
                         p Which of the following CSS features is used to achieve small caps?
                         label
-                            input(type='radio', name='q1', value='a')
+                            input(type='radio', name='answers[q1]', value='a')
                             span.option font-family
                         label
-                            input(type='radio', name='q1', value='b')
+                            input(type='radio', name='answers[q1]', value='b')
                             span.option font-size
                         label
-                            input(type='radio', name='q1', value='c')
+                            input(type='radio', name='answers[q1]', value='c')
                             span.option font-variant
                         label
-                            input(type='radio', name='q1', value='d')
+                            input(type='radio', name='answers[q1]', value='d')
                             span.option text-transform
                     hr
                     .question
                         p Which of the following image formats is not supported by the HTML &lt;img&gt; tag?
                         label
-                            input(type='radio', name='q2', value='a')
+                            input(type='radio', name='answers[q2]', value='a')
                             span.option SVG
                         label
-                            input(type='radio', name='q2', value='b')
+                            input(type='radio', name='answers[q2]', value='b')
                             span.option PNG
                         label
-                            input(type='radio', name='q2', value='c')
+                            input(type='radio', name='answers[q2]', value='c')
                             span.option JPEG
                         label
-                            input(type='radio', name='q2', value='d')
+                            input(type='radio', name='answers[q2]', value='d')
                             span.option PSD
                     hr
                     .question
@@ -51,22 +51,22 @@ html(lang="en")
                             b = a + b * c;
                             c = b + c * a;
                         label
-                            input(type='radio', name='q3', value='a')
+                            input(type='radio', name='answers[q3]', value='a')
                             span.option b is 54 and c is 240
                         label
-                            input(type='radio', name='q3', value='b')
+                            input(type='radio', name='answers[q3]', value='b')
                             span.option b is 34 and c is 58
                         label
-                            input(type='radio', name='q3', value='c')
+                            input(type='radio', name='answers[q3]', value='c')
                             span.option b is 34 and c is 29
                         label
-                            input(type='radio', name='q3', value='d')
+                            input(type='radio', name='answers[q3]', value='d')
                             span.option b is 54 and c is 44
                     hr
                     .question
                         label.field
                             span.label Your name
-                            input(type='text', name='email', class='text', required)
+                            input(type='text', name='name', class='text', required)
                         label.field
                             span.label Your E-mail
                             input(type='email', name='email', class='text', required)

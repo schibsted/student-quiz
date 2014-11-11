@@ -11,6 +11,7 @@ body {
     font-size: 15px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 1.4;
+    margin: 0;
 }
 .main {
     max-width: 620px;
