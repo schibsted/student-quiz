@@ -16,12 +16,12 @@ body {
 .main {
     max-width: 620px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 5px;
     background: #fff;
 }
 .inner {
     background: #f6f6f6;
-    padding: 20px 40px;
+    padding: 5px 20px;
     margin: 20px;
 }
 
@@ -103,4 +103,15 @@ input[type=radio] {
     box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
     background-image: #024278;
     background-image: linear-gradient(to bottom,#0c5c9a 0,#084c88 100%);
+}
+
+@media screen and (min-width: 480px) {
+
+    .main {
+        padding: 20px;
+    }
+    .inner {
+        padding: 20px 40px;
+    }
+
 }
