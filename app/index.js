@@ -31,8 +31,12 @@ app.get('/', function(req, res) {
 
 app.post('/', function(req, res) {
     console.log(req.body);
-    answer.create(req.body);
-    res.render('thanks', { title: 'Thanks!' });
+    answer.create(req.body, function(err, result) {
+        if(!err) {
+            return res.render('thanks', { title: 'Thanks!' });
+        }
+        return res.render('error', 'Something went wrong...');
+    });
 });
 
 app.use(function (err, req, res, next) {
