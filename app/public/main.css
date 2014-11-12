@@ -13,9 +13,13 @@ body {
     line-height: 1.4;
     margin: 0;
 }
+header {
+    max-width: 620px;
+    margin: 20px auto;
+}
 .main {
     max-width: 620px;
-    margin: 40px auto;
+    margin: 20px auto;
     padding: 5px;
     background: #fff;
 }
@@ -23,6 +27,14 @@ body {
     background: #f6f6f6;
     padding: 5px 20px;
     margin: 20px;
+}
+
+.media {
+    margin: 0 20px;
+}
+
+.alright {
+    text-align: right;
 }
 
 .question {
