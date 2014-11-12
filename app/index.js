@@ -1,9 +1,5 @@
 'use strict';
 
-if (process.env.NODE_ENV === 'production') {
-    require('newrelic');
-}
-
 var express = require('express'),
     logger = require('morgan'),
     bodyParser = require('body-parser'),
